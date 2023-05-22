@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+/*1. 공통부분 작성*/
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "나눔고딕", NanumGothic, "맑은고딕" MalgunGothic, sans-serif;
+    line-height: 1.7;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+/*2. 헤더 부분*/
+/*헤더 위치 조정*/
+.page-header {
+    position: relative;
+}
+
+/*로고 스타일 및 위치*/
+.logo-wrap {
+    z-index: 2;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 150px;
+    height: 150px;
+
+    display: inline-flex;
+    position: relative;
+  
+    -webkit-animation: ring 2s .7s ease-in-out infinite;
+    -webkit-transform-origin: 50% 4px;
+    -moz-animation: ring 2s .7s ease-in-out infinite;
+    -moz-transform-origin: 50% 4px;
+    animation: ring 2s .7s ease-in-out infinite;
+    transform-origin: 50% 4px;
+}
+
+@keyframes ring {
+    0% { -webkit-transform: rotateZ(0); }
+    1% { -webkit-transform: rotateZ(10deg); }
+    10% { -webkit-transform: rotateZ(-8deg); }
+    19% { -webkit-transform: rotateZ(8deg); }
+    28% { -webkit-transform: rotateZ(-6deg); }
+    37% { -webkit-transform: rotateZ(6deg); }
+    46% { -webkit-transform: rotateZ(-4deg); }
+    55% { -webkit-transform: rotateZ(4deg); }
+    64% { -webkit-transform: rotateZ(-2deg); }
+    73% { -webkit-transform: rotateZ(1deg); }
+    82% { -webkit-transform: rotateZ(-1deg); }
+    100% { -webkit-transform: rotateZ(0); }
+  }
+
+/*메뉴바 스타일 및 위치*/
+.menu-wrap {
+    z-index: 2;
+    margin-top: 45px;
+}
+
+.main-menu {
+    display: flex;
+    font-size: 1.25rem;
+}
+
+.main-menu > li {
+    margin-left: 100px;
+    position: relative;
+    float: left;
+}
+
+.menu-logo {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+}
+
+/*로그인/회원가입 스타일 및 위치*/
+.user-menu {
+    z-index: 2;
+    font-size: 0.75rem;
+    display: flex;
+    margin-top: 12px;
+}
+
+.user-menu > li {
+    margin-left: 20px;
+}
+    
+/*헤더 안의 내용 정렬*/
+.header-wrap {
+    display: flex;
+    justify-content: space-around;
+}

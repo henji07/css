@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Henji's Bakery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/reset.min.css" type="text/css">
+  <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/_03_style_main.sroll.css" type="text/css">
+</head>
+
+<body>
+  <!--헤더 영역: 로고 + 메뉴 + 로그인-->
+<header class="page-header">
+  <!--로고 + 메뉴바 + 로그인-->
+  <div class="header-wrap">
+      <!--로고-->
+      <h1 class="logo-wrap">
+          <a href="#">
+              <img src="icon/logo.png" alt="베이커리 로고">
+          </a>
+      </h1>
+
+      <!--메뉴바-->
+      <nav class="menu-wrap">
+          <ul class="main-menu">
+              <li>     
+                  <a href="#">베이커리 소개</a>                      
+              </li>
+              <li>
+                  <a href="#">메뉴 소개</a>
+              </li>
+              <li>
+                  <a href="#">클래스/공지</a>
+              </li>
+              <li>
+                  <a href="#">온라인 주문</a>
+              </li>
+              <li>
+                  <a href="">오시는 길</a>
+              </li>
+          </ul>
+      </nav>
+
+      <!--로그인/회원가입-->
+      <ul class="user-menu">
+          <li>
+              <a href="#">login</a>
+          </li>
+          <li>
+              <a href="#">join</a>
+          </li>
+      </ul>
+  </div>
+</div>
+</header>
+
+  <!--Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <img src="images/dough-gc4ea61db6_1920.jpg" alt="Slide 1"> 
+          <div class="slide1-text">
+            <p>헨지's 베이커리</p>
+            <p>OPEN  AM 9:00 | CLOSE PM 7:00</p>
+          </div>
+        </div>  
+
+        <div class="swiper-slide">
+          <img src="images/baker-g1923ba3a0_1920.jpg" alt="Slide 2">
+          <div class="slide2-text">
+            <p>매일 오전 갓 구운 빵을 만나보세요.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/meterial-ga00cd4912_1920 (2).jpg" alt="Slide 3">
+          <div class="slide3-text">
+            <p>유기농 밀가루만을 사용합니다.</p>
+            <p>최상의 온도·습도를 유지해 만들어진 최고의 반죽입니다.</p>
+          </div>
+        </div>
+ 
+        <div class="swiper-slide">
+          <img src="images/cro-gf11cb68a6_1920 (1).jpg" alt="Slide 4">
+          <div class="slide4-text">
+            <a href="#" class="slide4-oneday">원데이 클래스 바로가기</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/bakery-gf11cb68a6_1920 (2).jpg" alt="Slide 5">
+          <div class="slide5-text">
+          <p>빵 나오는 시간</p>
+          <p>식빵류 | AM 11:00</p>
+          <p>단과자 | AM 09:00</p>
+          <p>파이류 | AM 10:00</p>
+          <p>케익류 | AM 09:00</p>
+          </div>
+        </div>
+    
+    <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      direction: "vertical",
+      slidesPerView: 1,
+      spaceBetween: 30,
+      mousewheel: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
+
+</body>
+
+</html>

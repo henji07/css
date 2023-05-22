@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Henji's Bakery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/reset.min.css" type="text/css">
+  <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/_04_style_footer.css" type="text/css">
+</head>
+
+<body>
+  <!--헤더 영역: 로고 + 메뉴 + 로그인-->
+<header class="page-header">
+  <!--로고 + 메뉴바 + 로그인-->
+  <div class="header-wrap">
+      <!--로고-->
+      <h1 class="logo-wrap">
+          <a href="#">
+              <img src="icon/logo.png" alt="베이커리 로고">
+          </a>
+      </h1>
+
+      <!--메뉴바-->
+      <nav class="menu-wrap">
+          <ul class="main-menu">
+              <li>  
+                <a href="#">베이커리 소개</a>    
+                <ul class="bakery-submenu">
+                  <li>
+                    <a href="#">행궁점 이야기</a>
+                  </li>
+                  <li>
+                    <a href="#">인계점 이야기</a>
+                  </li>
+                </ul>                      
+              </li>
+              <li>
+                  <a href="#">메뉴 소개</a>
+                  <ul class="menu-submenu">
+                    <li>
+                      <a href="#">이달의 신제품</a>
+                    </li>
+                    <li>
+                      <a href="#">빵 메뉴</a>
+                    </li>
+                    <li>
+                      <a href="#">음료 메뉴</a>
+                    </li>
+                  </ul>         
+              </li>
+              <li>
+                  <a href="#">클래스/공지</a>
+                  <ul class="class-submenu">
+                    <li>
+                      <a href="#">헨지스 새소식</a>
+                    </li>
+                    <li>
+                      <a href="#">원데이 클래스</a>
+                    </li>
+                  </ul> 
+              </li>
+              <li>
+                  <a href="#">온라인 주문</a>
+              </li>
+              <li>
+                  <a href="#">고객 후기</a>
+              </li>
+          </ul>
+      </nav>
+      <!--글자 색 배경에 따라 변경-->
+      <script>
+        function getTextColorByBackgroundColor (hexColor) {
+
+          const c = hexColor.subString(1); //색상 앞의 # 제거
+          const rgb = parseInt(c, 16); //rrggbb를 10진수로 변환
+          const r = (rgb >> 16) & 0xff; //red 추출
+          const g = (rgb >> 8) & 0xff; //green 추출
+          const b = (rgb >> 0) & 0xff; //blue 추출
+          
+          //per ITU-R BT.709
+          const luma = 0.2126 * r * 0.7152 * g + 0.0722 * b; 
+
+          //색상 선택
+          return luma < 127.5? "white" : "black"; //글자색이
+        }
+      </script>
+      <!--로그인/회원가입-->
+      <ul class="user-menu">
+          <li>
+              <a href="#">login</a>
+          </li>
+          <li>
+              <a href="#">join</a>
+          </li>
+      </ul>
+  </div>
+</div>
+</header>
+
+  <!--Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <img src="images/dough-gc4ea61db6_1920.jpg" alt="Slide 1"> 
+          <div class="slide1-text">
+            <p>헨지's 베이커리</p>
+            <p>OPEN  AM 9:00 | CLOSE PM 19:00 <br>매주 일요일 휴무</p>
+          </div>
+        </div>  
+
+        <div class="swiper-slide">
+          <img src="images/baker-g1923ba3a0_1920.jpg" alt="Slide 2">
+          <div class="slide2-text">
+            <p>매일 오전 갓 구운 빵을 만나보세요.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/meterial-ga00cd4912_1920 (2).jpg" alt="Slide 3">
+          <div class="slide3-text">
+            <p>유기농 밀가루만을 사용합니다.</p>
+            <p>최상의 온도·습도를 유지해 만들어진 최고의 반죽입니다.</p>
+          </div>
+        </div>
+ 
+        <div class="swiper-slide">
+          <img src="images/cro-gf11cb68a6_1920 (1).jpg" alt="Slide 4">
+          <div class="slide4-text">
+            <a href="#" class="slide4-oneday">원데이 클래스 바로가기</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/bakery-gf11cb68a6_1920 (2).jpg" alt="Slide 5">
+          <div class="slide5-text">
+          <p>빵 나오는 시간</p>
+          <p>식빵류 | AM 11:00</p>
+          <p>단과자 | AM 09:00</p>
+          <p>파이류 | AM 10:00</p>
+          <p>케익류 | AM 09:00</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+   <!--푸터 영역-->
+   <footer class="footer">
+    <div class="footer-wrap">
+        <div class="footer-header">
+            <div class="footer-tel">
+              HENJI's BAKERY 대표번호 | 010.3268.8347
+            </div>
+
+            <div class="footer-branch">
+              AM 9:00 ~ PM 19:00 | 매주 일요일 휴무<br><br>
+              <div class="footer-branch2">
+                <ul>
+                  <li>
+                    <a href="#" class="footer-branch2-text">대량 주문 안내</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footer-branch2-text">단체 클래스 안내</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footer-branch2-text">온라인 고객센터</a>
+                  </li>
+                </ul>  
+              </div>
+            </div>
+
+            <img src="icon/bake.png" alt="아이콘">
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <div class="footer-btn-wrap">
+                <a href="#"><strong>개인정보처리방침</strong></a>
+                <a href="#">이용약관</a>
+                <a href="#">위치기반서비스 이용약관</a>
+                <a href="#">법적고지</a>
+                <a href="#">사업자정보확인</a>
+            </div>
+        <div class="footer-content">
+            <div class="footer-address">
+                <br>
+                <pre>대표 : 조현진     |     문의 : 010.3268.8347     |     팩스 : 02.1111.1111</pre> 
+                <pre>통신판매업종신고증: 제 2023-경기수원-000호     | 대표이메일: gogohenji@google.com</pre>
+            </div>
+        </div>
+            <div class="footer-copywrite">
+                Copywrite ⓒ (주)HENJI's BAKERY All rights reserved.
+            </div>
+        </div>
+    </div>
+</footer>
+        </div>
+    
+    <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+  <div class="fullpage-nav">
+    <span class="fullpage-nav-current">05</span>
+    <span class="fullpage-nav-progress">
+      <em class="fullpage-nav-progress-active" style="height: 100%;"></em>
+    </span>
+    <span class="fullpage-nav-total">05</span>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      direction: "vertical",
+      slidesPerView: 1,
+      spaceBetween: 30,
+      mousewheel: true,
+      pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      },
+    });
+  </script>
+  
+</body>
+
+</html>
